@@ -1,7 +1,45 @@
-main {
+body {
     margin: 0;
 }
 
+
+
 .container {
     display: grid;
+    grid-template: 150px / auto;
 }
+
+.container  > div{
+    border: 1px;
+}
+ input {
+    border: 1px solid blue;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    padding: 5px;
+    min-width: 400px;
+
+ }
+ .display-item {
+    background-image: url("./bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: 480px 480px;
+    border: 1px solid white;
+}
+ .button-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid white;
+ }
+
+ button {
+    border: none;
+    margin: 5px;
+    width: 90px;
+    padding: 7px;
+    text-align: center;
+    color: rgb(145, 145, 100);
+    background-color: blue;
+
+ }
