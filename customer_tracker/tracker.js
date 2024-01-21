@@ -15,7 +15,10 @@ if (localStorage.names) {
 save_elem.addEventListener("click", function(){
     chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
         let url_value = tabs[0].url;
-        listItems.push(url_value)
+        if (!listItems.includes(url_value)) {
+            listItems.push(url_value);
+        }
+        
     });
     clear_input()
     clear_fromLS()
@@ -45,6 +48,7 @@ function display(items){
         li.appendChild(anchor)
 
         li.style.listStyle = 'none'
+        li.style.padding = '10px'
         display_elem.appendChild(li);
     }
 }
