@@ -24,7 +24,7 @@ body {
  .display-item {
     background-image: url("./bgimg.jpg");
     background-repeat: no-repeat;
-    background-size: 480px 480px;
+    background-size: 340px 340px;
     border: 1px solid white;
 }
  .button-item {
@@ -36,11 +36,18 @@ body {
 
  button {
     border: none;
+    font-weight: bold; 
+    font-size: large;
+    border-radius: 4px;
     margin: 5px;
-    width: 90px;
+    width: 120px;
     padding: 7px;
     text-align: center;
     color: rgb(145, 145, 100);
     background-color: blue;
 
+ }
+
+ ul li{
+    list-style: none;
  }
