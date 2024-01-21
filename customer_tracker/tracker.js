@@ -34,8 +34,17 @@ delete_elem.addEventListener("click", function(){
 function display(items){
     clear_page()
     for (let i = 0; i < items.length; i++) {
+
         let li = document.createElement("li");
-        li.appendChild(document.createTextNode(items[i]));
+        let anchor = document.createElement("a");
+
+        anchor.href = items[i]
+        anchor.target = "_blank";
+
+        anchor.appendChild(document.createTextNode(items[i]));
+        li.appendChild(anchor)
+
+        li.style.listStyle = 'none'
         display_elem.appendChild(li);
     }
 }

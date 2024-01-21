@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: rgb(56, 54, 54);
 }
 
 
@@ -24,7 +24,7 @@ body {
  .display-item {
     background-image: url("./bgimg.jpg");
     background-repeat: no-repeat;
-    background-size: 340px 340px;
+    background-size: 400px 160px;
     border: 1px solid white;
 }
  .button-item {
@@ -48,6 +48,7 @@ body {
 
  }
 
- ul li{
-    list-style: none;
+ ul {
+    padding: 12px;
+    font-size: medium;
  }
