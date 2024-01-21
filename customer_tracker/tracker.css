@@ -1,18 +1,22 @@
+/* styled body */
 body {
     margin: 0;
     background-color: rgb(56, 54, 54);
 }
 
 
-
+/* styled the main container */
 .container {
     display: grid;
     grid-template: 150px / auto;
 }
 
+/* styled crid items */
 .container  > div{
     border: 1px;
 }
+
+/* styled the input  */
  input {
     border: 1px solid blue;
     border-radius: 4px;
@@ -21,12 +25,16 @@ body {
     min-width: 400px;
 
  }
+
+ /* styled the div in which urls will be displayed */
  .display-item {
     background-image: url("./bgimg.jpg");
     background-repeat: no-repeat;
     background-size: 400px 160px;
     border: 1px solid white;
 }
+
+/* styled the add and delete buttons */
  .button-item {
     display: flex;
     flex-direction: row;
@@ -47,10 +55,12 @@ body {
     background-color: blue;
 
  }
+ /* style the delete button */
  #delete {
     background-color: red;
  }
 
+ /* styled the ul tag */
  ul {
     padding: 12px;
     font-size: medium;
