@@ -5,6 +5,7 @@ const delete_elem = document.getElementById("delete")
 
 if (localStorage.names) {
     listItems = JSON.parse(localStorage.names);
+    display(listItems)
 } else {
     listItems = [];
 }
@@ -13,10 +14,8 @@ if (localStorage.names) {
 // this will save a url from an input
 save_elem.addEventListener("click", function(){
     chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
-        let urr_value = tabs[0].url;
-        console.log(url_value)
+        let url_value = tabs[0].url;
         listItems.push(url_value)
-        // use `url` here inside the callback because it's asynchronous!
     });
     clear_input()
     clear_fromLS()
@@ -27,6 +26,7 @@ save_elem.addEventListener("click", function(){
 
 // this will delete the urls
 delete_elem.addEventListener("click", function(){
+    listItems = []
     clear_fromLS()
     clear_page()
 })
